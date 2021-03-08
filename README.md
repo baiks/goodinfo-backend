@@ -7,6 +7,7 @@ In order to install and run this project locally, you would need to have the fol
 - [**Node JS**](https://nodejs.org/en/)
 - [**Express**](https://expressjs.com/)
 - [**MySQL**](https://www.mysql.com/downloads/)
+- [**Docker Engine**](https://www.docker.com/)
 
 ### Installation
 
@@ -31,8 +32,7 @@ Change the database credentials on .env
 ## Docker
 
 - Build image
-
-`docker-compose build .`
+`docker-compose build`
 
 - Run container
-  `docker-compose up`
+`docker-compose up -d`
