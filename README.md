@@ -31,6 +31,15 @@ Change the database credentials on .env
 
 ## Docker
 
+- Create a MySQL database and run the `sql` file in the database directory to migrate the database
+
+```sh
+mysql -u <dbuser> -D <databasename> -p < ./src/database/database.sql
+```
+
+```sh
+Change the database credentials on .env
+
 - Build image
 `docker-compose build`
 
