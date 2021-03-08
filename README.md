@@ -9,7 +9,7 @@ In order to install and run this project locally, you would need to have the fol
 - [**MySQL**](https://www.mysql.com/downloads/)
 - [**Docker Engine**](https://www.docker.com/)
 
-##Manual Installation
+## Manual Installation
 
 - Clone this repository
 
