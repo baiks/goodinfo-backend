@@ -1,0 +1,32 @@
+version: '3.5'
+
+services:
+  backend:
+    container_name: backend
+    image: docker.io/luapk4/backend:v1.0.0
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/backend
+    environment:
+      #Production and development
+      DB_USER: root
+      DB_PASS: baiks@123
+      DB_NAME: btc_goodinfo
+      DB_HOST: host.docker.internal
+
+      #Test environment
+      TEST_DB_USER: root
+      TEST_DB_PASS: baiks@123
+      TEST_DB_NAME: btc_goodinfo
+      TEST_DB_HOST: host.docker.internal
+
+      NODE_ENV: development
+      PORT: 9015
+
+      #JWT
+      BTCAPI: https://api-pub.bitfinex.com/v2/tickers?symbols=tBTCUSD
+
+    ports:
+      - '9015:9015'
