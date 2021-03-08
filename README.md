@@ -39,6 +39,7 @@ mysql -u <dbuser> -D <databasename> -p < ./src/database/database.sql
 
 ```sh
 Change the database credentials on .env
+```
 
 - Build image
 `docker-compose build`
